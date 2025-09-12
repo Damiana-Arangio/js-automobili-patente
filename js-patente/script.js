@@ -12,17 +12,17 @@ const persone = [
     { nome: "nomeE", cognome: "cognomeE", eta: 12 },
 ];
 
-// Ciclo gli oggetto con map che ritorna un array di stringhe
+// Controllo se persona maggiorenne/minorenne e ritorno stringa
 const arrayStringhe = persone.map((persona) => {
 
     // Persona maggiorenne
     if (persona.eta >= 18) {
-        return (`La persona ${persona.nome} ${persona.cognome} può guidare!`);
+        return `La persona ${persona.nome} ${persona.cognome} può guidare!`;
     }
 
     // Persona minorenne
     else {
-        return (`La persona ${persona.nome} ${persona.cognome} non può guidare!`);
+        return `La persona ${persona.nome} ${persona.cognome} non può guidare!`;
     }
 });
 
